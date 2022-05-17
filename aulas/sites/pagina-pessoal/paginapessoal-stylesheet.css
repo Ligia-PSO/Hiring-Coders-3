@@ -1,0 +1,176 @@
+/* ----------------------Pre definicoes------------------ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*oconteudo de cada div ira ficar contido dentro da sua div*/
+    /* color: ##eacb1c; */
+    color: #eacb1c;
+    /* color: rgb(190,100,200); */
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-style: italic;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------- */
+
+body {
+    /* background-image: url(./pexels-cátia-matos-1072179.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed; */
+    background: url(./pexels-cátia-matos-1072179.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /* background: linear-gradient(90deg, #00f260, #0575e6); */
+}
+
+header {
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content:flex-end;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ffff;
+    /* box-shadow: 1px 1px 6px 1px #fff; */
+    /* border-bottom: 15px ridge #fff; */
+    /* margin-bottom: 80px; */
+}
+
+header ul {
+    display: inherit;
+    margin-right: 3%;
+    border-bottom: 1px dashed #fff;
+}
+
+header ul li {
+    padding: 8px;
+}
+
+.container {
+    text-align: center;
+    /* padding: 70px; */
+    padding-top: 120px;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 10px;
+}
+
+#arrow {
+    font-size: 30px;
+    animation: blink/*nome arbitrario dado a animacao p/ ser ch depois*/1s steps(5, start) infinite/*repetir infinitamente a animacao*/;
+}
+#arrow :hover{
+    cursor: pointer;
+}
+/* 
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+} */
+
+#animation {
+    transition: 300ms ;
+}
+
+.rotate {
+    /* transform: rotate(180deg); */
+    transform: scaleY(-1);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+    /*sobrescrever um estulo absoluto in line*/
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    /* border: thick double #fff; */
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    /*50% do comprimento do container*/
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 20%;
+    margin: 10px;
+    padding: 5px 5px;
+    background-color: #eacb1c;
+    background: linear-gradient(to right, aquamarine 50%, #eacb1c 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+
+    /*20% do comprimento do form que ja e 50%do comprimento do container*/
+}
+
+.form button:hover {
+    background-position: left bottom;
+    background-color: aquamarine;
+}
+@media only screen and (max-width:768px){/*ipad mini size screen*/
+    .container div h1{
+        font-size: 30px;
+    }
+    .container div h5{
+        font-size: 20px;
+    }
+
+    .form{
+    width: 100%;
+}
+
+}
+@media only screen and (max-width:375px){
+    .container div h1{
+        font-size: 25px;
+    }
+    .container div h5{
+        font-size: 15px;
+    }
+    .container {
+        padding-top: 20%;
+    }
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+
+}
