@@ -1,3 +1,42 @@
+html{
+  width: 100%;
+  height: 100%;
+  background-color: darkcyan;
+}
+body{
+  background-color: inherit;
+  width: inherit;
+  height: inherit;
+}
+p,h1{
+  text-align: center;
+}
+
 .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 5%;
+  width: 100%;
+  justify-content: center;
+}
+
+.page-header{
+  position: relative;
+  bottom: 0px;
+}
+form{
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+}
+
+.cpfvalidator_container{
+  background-color: white;
+  height: 50%;
+  width: 60%;
+  margin: 20% auto 20%;
+  border-radius: 20px;
+  border: solid ;
+  overflow:hidden;
 }
